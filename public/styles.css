@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #004ba0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    height: 100px; /* Adjust the height of the logo */
+    position: absolute; /* Position the logo absolutely */
+    left: 20px; /* Adjust the left distance as needed */
+    top: 7.5%; /* Position the logo vertically in the middle */
+    transform: translateY(-50%); /* Adjust vertical position */
+}
+
+
+.site-title {
+    margin-bottom: 10px; /* Add margin to separate the site title from navigation */
+}
+
+.site-title h1 {
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* Position the dropdown menu */
+    margin: 10px; /* Add margin between navigation items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Add padding to the menu items */
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown menu below the parent */
+    left: 0;
+    background-color: #004ba0;
+    z-index: 1; /* Ensure the dropdown menu appears above other content */
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styles for product container */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 55px;
+    width: 350px;
+    display: inline-block;
+}
+
+/* #sai{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 55px;
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    top: 888px;
+    display: inline-block;
+}
+
+#sai2{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 55px;
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    left: 494px;
+    display: inline-block;
+} */
+
+/* #sai3{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 55px;
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    left: 600px;
+    display: inline-block;
+} */
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.product button {
+    background-color: #004ba0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Additional Styles for Sections */
+#topwear, #bottomwear, #combos {
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#topwear h2, #bottomwear h2, #combos h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+footer {
+    background-color: #004ba0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

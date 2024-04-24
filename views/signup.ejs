@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the sign-up page */
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .signup-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .signup-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .signup-form {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Add this line */
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #369e62;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #369e62;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-button:hover {
+            background-color: #267240;
+        }
+
+        /* Import global styles from style.css */
+        /* Resetting default margin and padding */
+        body, h1, h2, p {
+          margin: 0;
+          padding: 0;
+        }
+
+        /* Global styles */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #141f2d; /* Dark blue background */
+          color: #fff; /* White text color */
+        }
+
+        .container {
+          width: 80%;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+
+        /* Header styles */
+        header {
+          background-color: #0e1621; /* Darker blue for header */
+          padding: 20px 0;
+        }
+
+        header h1 {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+        }
+
+        header h1 img {
+          margin-right: 10px; /* Add some space between the image and the text */
+        }
+
+        nav {
+          background-color: #0e1621; /* Darker blue for nav */
+          display: flex;
+          justify-content: space-between; /* Center all elements except right-side */
+        }
+
+        nav ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          align-items: center;
+        }
+
+        nav ul li {
+          margin: 0 10px;
+        }
+
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        /* Right side of navigation (login and signup) */
+        .nav-right {
+          display: flex; /* Allow buttons to be side-by-side */
+        }
+
+        .nav-right a {
+          margin-right: 100px;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+          /* Can be removed if search bar is not centered */
+          margin-left: auto;
+          text-align: center;
+          display: flex; /* Ensure input and button are on the same line */
+        }
+
+        .search-bar input[type="text"] {
+          padding: 0px;
+          border: none;
+          border-radius: 15px;
+          width: 250px;
+          height: 40px;
+          font-size: 14px;
+          position: absolute;
+          right: 125px;
+        }
+
+        .search-bar button[type="submit"] {
+          padding: 5px 10px;
+          background-color: #1E90FF; /* Adjust color as needed */
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-left: 5px;
+          font-size: 14px;
+          width: 80px;
+          height: 40px;
+          position: absolute;
+          right: 30px;
+        }
+
+        .search-bar button[type="submit"]:hover {
+          background-color: #4682B4; /* Adjust hover color as needed */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <a href="/">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="navItem">
+                <a href="/login">Login</a>
+                <a href="/signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="signup-container">
+        <h2 class="signup-title">Sign Up</h2>
+        <form class="signup-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footerRight">
+            <p class="copyright">© 2024 Sign Up page. All rights reserved.</p>
+        </div>
+    </footer

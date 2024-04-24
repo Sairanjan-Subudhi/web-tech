@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Merchandise Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/1200px-Indian_Premier_League_Official_Logo.svg.png" alt="IPL LOGO" width="250px">
+                <span class="store-title">IPL Merchandise Store</span>
+            </h1>
+            <nav>
+                <ul class="nav-left">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Shop</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/mi">Mumbai Indians</a></li>
+                            <li><a href="/rcb">Royal Challengers Bangalore</a></li>
+                            <li><a href="/csk">Chennai Super Kings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">About</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#mumbai-indians">Mumbai Indians</a></li>
+                            <li><a href="#royal-challengers-bangalore">Royal Challengers Bangalore</a></li>
+                            <li><a href="#chennai-super-kings">Chennai Super Kings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="/login">Login</a>
+                    <a href="/signup">Sign Up</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <img class="center-image" src="https://i.pinimg.com/736x/5a/64/4b/5a644bd7163f2995a8a7937eb6d25ac3.jpg" width="900px">
+
+    <section id="mumbai-indians" class="team-section mumbai-indians-bg">
+        <div class="container">
+            <h1>Mumbai Indians</h1>
+            <br>
+            <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/11/ipl-2020-mi-1605081730.jpg" height="500px"> 
+            <p>Mumbai Indians (MI) is a franchise cricket team based in Mumbai, Maharashtra, India. The team competes in the Indian Premier League (IPL) and has won the tournament a record five times. Mumbai Indians is one of the most successful teams in the IPL, known for its strong batting lineup and formidable bowling attack.</p>
+            <p>Key Players: Hardik Pandya(Captain), Rohit Sharma , Jasprit Bumrah, Kieron Pollard</p>
+            <br>
+            <!-- Buy Now button for Mumbai Indians -->
+            <button class="buy-now-btn" onclick="buyNow('/mi')">Buy Mumbai Indians Merchandise</button>
+        </div>
+    </section>
+    
+    <section id="royal-challengers-bangalore" class="team-section rcb-bg">
+        <div class="container">
+            <h2>Royal Challengers Bangalore</h2>
+            <br>
+            <img src="https://assets-webp.khelnow.com/d7293de2fa93b29528da214253f1d8d0/640x360/news/uploads/2023/05/Royal-Challengers-Bangalore-IPL-2023.jpg.webp" height="500px" width="1000px">
+            <p>Royal Challengers Bangalore (RCB) is a franchise cricket team based in Bangalore, Karnataka, India. The team competes in the Indian Premier League (IPL) and is known for its passionate fan base and star-studded lineup. Despite not winning the IPL title yet, RCB has consistently been one of the most exciting teams in the tournament.</p>
+            <p>Key Players: Faf du Plessis(Captain), AB de Villiers, Glenn Maxwell, Virat Kohli </p>
+            <br>
+            <!-- Buy Now button for Royal Challengers Bangalore -->
+            <button class="buy-now-btn" onclick="buyNow('/rcb')">Buy RCB Merchandise</button>
+        </div>
+    </section>
+    
+    <section id="chennai-super-kings" class="team-section csk-bg">
+        <div class="container">
+            <h2>Chennai Super Kings</h2>
+            <br>
+            <img src="https://www.financialexpress.com/wp-content/uploads/2022/02/CSK-IE-2021.jpg" width="1000px">
+            <p>Chennai Super Kings (CSK) is a franchise cricket team based in Chennai, Tamil Nadu, India. The team competes in the Indian Premier League (IPL) and has a huge fan following, known as the "Yellow Army". CSK is one of the most successful teams in the IPL, having won the tournament three times.</p>
+            <p>Key Players: MS Dhoni (Captain), Moeen Ali, Ravindra Jadeja</p>
+            <br>
+            <!-- Buy Now button for Chennai Super Kings -->
+            <button class="buy-now-btn" onclick="buyNow('/csk')">Buy CSK Merchandise</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IPL Merchandise Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js">
+        function buyNow(page) {
+            console.log("Redirecting to " + page);
+            // Redirect to another webpage
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
